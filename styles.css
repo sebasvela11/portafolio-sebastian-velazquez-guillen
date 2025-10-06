@@ -1,4 +1,3 @@
-/* ===== Variables ===== */
 :root {
   --accent: #7c3aed;
   --accent-strong: #6d28d9;
@@ -33,7 +32,6 @@ h1, h2, h3 {
   font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-/* Header / Nav */
 header {
   text-align: center;
   padding: 56px 16px;
@@ -77,6 +75,7 @@ nav a {
   text-decoration: none;
   transition: color .2s ease;
 }
+
 nav a::after {
   content: "";
   position: absolute;
@@ -87,10 +86,18 @@ nav a::after {
   background: linear-gradient(90deg, var(--accent), var(--accent-strong));
   transition: width .25s ease;
 }
-nav a:hover { color: #a78bfa; }
-nav a:hover::after { width: 100%; }
 
-/* Switch de idioma */
+/* 🔥 Mantiene el efecto de color, sin subrayado extra */
+nav a:hover {
+  color: #a78bfa;
+  text-decoration: none; /* <- evita subrayado */
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+
 #switches {
   position: fixed;
   top: 20px;
@@ -134,7 +141,6 @@ nav a:hover::after { width: 100%; }
 }
 #lang-switch button:hover { transform: scale(1.05); color: #fff; }
 
-/* Secciones */
 .section {
   padding: var(--space) 16px;
   max-width: 1100px;
@@ -179,7 +185,6 @@ h3 { color: #f4f4fb; margin: .75rem 0; }
   }
 }
 
-/* Párrafo de información - justificado completamente */
 #info .lead.justify {
   text-align: justify;
   text-justify: inter-word;
@@ -188,7 +193,6 @@ h3 { color: #f4f4fb; margin: .75rem 0; }
   margin-bottom: 1.2rem;
 }
 
-/* Facts list styling */
 .facts {
   list-style: none;
   margin-left: 0;
@@ -217,7 +221,6 @@ h3 { color: #f4f4fb; margin: .75rem 0; }
 
 ul { line-height: 1.9; }
 
-/* Estilos para enlaces */
 a {
   color: var(--accent);
   text-decoration: none;
@@ -229,7 +232,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Grids, cards, botones */
 .grid-2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -264,7 +266,6 @@ a:hover {
   flex-wrap: wrap;
 }
 
-/* Botones */
 .btn {
   background: linear-gradient(90deg, var(--accent), var(--accent-strong));
   color: #fff;
@@ -290,7 +291,6 @@ a:hover {
   filter: saturate(1.1);
 }
 
-/* PDF Preview */
 .doc-preview-wrap {
   border-radius: 12px;
   overflow: hidden;
@@ -311,7 +311,6 @@ a:hover {
   }
 }
 
-/* Habilidades */
 .skills-wrap {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -319,7 +318,6 @@ a:hover {
   margin-top: 18px;
 }
 
-/* Paneles de habilidades con fondo y padding */
 .skills-wrap > div {
   background: linear-gradient(180deg, var(--panel), var(--panel-2));
   border-radius: var(--radius);
@@ -353,7 +351,6 @@ a:hover {
 
 .skills li { list-style: "• "; }
 
-/* Certificados */
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -407,7 +404,6 @@ a:hover {
 }
 .cert:hover img { transform: scale(1.04); filter: brightness(1.15); }
 
-/* Video */
 .video-frame {
   aspect-ratio: 16/9;
   width: 100%;
@@ -420,7 +416,6 @@ a:hover {
 }
 .video-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
 
-/* Hover genérico */
 .hover-raise {
   transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
 }
@@ -436,7 +431,6 @@ a:hover {
   }
 }
 
-/* Modal */
 .modal {
   position: fixed;
   inset: 0;
@@ -514,7 +508,6 @@ a:hover {
 }
 .modal-close:hover { transform: rotate(90deg); background: #1d1d2a; }
 
-/* Aparición */
 .reveal {
   opacity: 0;
   transform: translateY(24px) scale(.98);
@@ -523,7 +516,6 @@ a:hover {
 }
 .reveal.in-view { opacity: 1; transform: none; filter: none; }
 
-/* Justificar */
 .justify {
   text-align: justify;
   text-justify: inter-word;
@@ -544,7 +536,6 @@ a:hover {
   }
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 56px 16px;
@@ -557,4 +548,8 @@ footer {
     padding: 40px 16px;
     font-size: 0.85rem;
   }
+}
+
+.white-text {
+  color: #ffffff !important;
 }
