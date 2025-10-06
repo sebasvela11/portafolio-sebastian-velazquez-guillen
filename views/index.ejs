@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-i18n="doc_title">Portafolio | Sebastián Velázquez Guillén</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles.css"/>
+</head>
+<body>
+  <!-- Switch de idioma -->
+  <div id="switches">
+    <div id="lang-switch" aria-label="Cambiar idioma" title="Idioma">
+      <button id="lang-es" class="active">ES</button>
+      <button id="lang-en">EN</button>
+    </div>
+  </div>
+
+  <header class="reveal section">
+    <h1>Sebastián Velázquez Guillén</h1>
+    <p data-i18n="role">Desarrollador de Software · San José, Costa Rica</p>
+    <nav>
+      <a href="#info" data-i18n="nav_info">Mi información</a>
+      <a href="#formacion" data-i18n="nav_formacion">Mi formación</a>
+      <a href="#experiencia" data-i18n="nav_experiencia">Mi experiencia</a>
+      <a href="#proyectos" data-i18n="nav_proyectos">Mis proyectos</a>
+      <a href="#cartas" data-i18n="nav_cartas">Cartas</a>
+    </nav>
+  </header>
+
+  <!-- 1) Mi información -->
+  <section id="info" class="reveal section" data-reveal-group>
+    <h2 data-i18n="info_title">Mi información</h2>
+    <div class="info-content hover-raise">
+      <p class="lead justify" data-i18n="info_text">
+        Experiencia en desarrollo de software, con gran capacidad de adaptación a diferentes situaciones,
+        resolución de problemas y entrega de resultados sobresalientes, ya sea trabajando en equipo o de
+        manera independiente.
+      </p>
+
+      <ul class="facts">
+        <strong data-i18n="email_label">Email:</strong> <a href="mailto:sebastianvg112004@gmail.com">sebastianvg112004@gmail.com</a><br/>
+        <strong data-i18n="phone">Teléfono:</strong> +506 8849-3715<br/>
+        <strong data-i18n="languages">Idiomas:</strong> Español · Inglés B1
+      </ul>
+    </div>
+
+    <div class="skills-wrap">
+      <div class="hover-raise">
+        <h3 data-i18n="skills_pro">Habilidades profesionales</h3>
+        <ul class="skills grid-list" data-reveal-stagger>
+          <li>Node.js</li>
+          <li>Java</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+          <li>Oracle</li>
+          <li>Firebase</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>.NET</li>
+          <li>Flutter</li>
+          <li>Dart</li>
+          <li>PrimeFaces</li>
+          <li data-i18n="pro_modelado">Modelado de datos</li>
+          <li data-i18n="pro_arch_backend">Arquitectura backend</li>
+          <li data-i18n="pro_arch_frontend">Arquitectura frontend</li>
+          <li>UX</li>
+          <li>UI</li>
+          <li data-i18n="pro_user_centered">Diseño centrado en el usuario</li>
+        </ul>
+      </div>
+
+      <div class="hover-raise">
+        <h3 data-i18n="skills_soft">Habilidades blandas</h3>
+        <ul class="skills grid-list" data-reveal-stagger>
+          <li data-i18n="soft_problem_solving">Resolución de problemas</li>
+          <li data-i18n="soft_adaptability">Adaptabilidad</li>
+          <li data-i18n="soft_responsibility">Responsabilidad</li>
+          <li data-i18n="soft_leadership">Liderazgo</li>
+          <li data-i18n="soft_empathy">Empatía</li>
+          <li data-i18n="soft_communication">Comunicación</li>
+          <li data-i18n="soft_teamwork">Trabajo en equipo</li>
+          <li data-i18n="soft_results">Orientación a resultados</li>
+          <li data-i18n="soft_self">Autogestión</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2) Mi formación -->
+  <section id="formacion" class="reveal section" data-reveal-group>
+    <h2 data-i18n="form_title">Mi formación</h2>
+
+    <div class="edu hover-raise">
+      <h3 data-i18n="form_edu">Ingeniería en Software</h3>
+      <p><span data-i18n="form_uni">Universidad Latina de Costa Rica</span> – <em>2022 – 2025</em></p>
+    </div>
+
+    <h3 data-i18n="form_cert">Certificaciones</h3>
+    <div class="cert-grid" data-reveal-stagger>
+      <button class="cert hover-raise" data-modal="img" data-src="/img/bachiller.jpg">
+        <img src="/img/bachiller.jpg" alt="Bachiller en Educación Media">
+        <p><strong data-i18n="cert_bach">Bachiller en Educación Media</strong><br><span data-i18n="cert_bach_meta">Colegio Madre del Divino Pastor · 2021</span></p>
+      </button>
+
+      <button class="cert hover-raise" data-modal="img" data-src="/img/informatica.jpg">
+        <img src="/img/informatica.jpg" alt="Certificado de Aprovechamiento – Informática">
+        <p><strong data-i18n="cert_info">Certificado de Aprovechamiento – Informática</strong><br><span data-i18n="cert_info_meta">Colegio Madre del Divino Pastor · 2021</span></p>
+      </button>
+
+      <button class="cert hover-raise" data-modal="img" data-src="/img/ingles-b1.jpg">
+        <img src="/img/ingles-b1.jpg" alt="Constancia Nivel de Inglés B1">
+        <p><strong data-i18n="cert_b1">Constancia Nivel de Inglés B1</strong><br><span data-i18n="cert_b1_meta">UCR / MEP · 2021</span></p>
+      </button>
+
+      <button class="cert hover-raise" data-modal="img" data-src="/img/ventas-b2b.jpg">
+        <img src="/img/ventas-b2b.jpg" alt="Curso de Venta B2B – Udemy">
+        <p><strong data-i18n="cert_b2b">Curso de Venta B2B</strong><br><span>Udemy · 2025</span></p>
+      </button>
+
+      <button class="cert hover-raise" data-modal="img" data-src="/img/javascript-total.jpg">
+        <img src="/img/javascript-total.jpg" alt="JavaScript TOTAL – Udemy">
+        <p><strong data-i18n="cert_js_total">JavaScript TOTAL</strong><br><span>Udemy · 2024</span></p>
+      </button>
+
+      <button class="cert hover-raise" data-modal="img" data-src="/img/github-fundations-udemy.jpg">
+        <img src="/img/github-fundations-udemy.jpg" alt="GitHub Foundations (Udemy)">
+        <p><strong>GitHub Foundations</strong><br><span>Udemy · 2024</span></p>
+      </button>
+
+      <button class="cert hover-raise" data-modal="img" data-src="/img/github-credly.png">
+        <img src="/img/github-credly.png" alt="GitHub Foundations – Credly">
+        <p><strong>GitHub Foundations</strong><br><span>GitHub · 2024</span></p>
+      </button>
+
+      <button class="cert hover-raise" data-modal="img" data-src="/img/linux-lpi.png">
+        <img src="/img/linux-lpi.png" alt="Linux Essentials – LPI">
+        <p><strong>Linux Essentials</strong><br><span>LPI · 2023</span></p>
+      </button>
+
+      <button class="cert hover-raise" data-modal="img" data-src="/img/linux-ndg.png">
+        <img src="/img/linux-ndg.png" alt="NDG Linux Essentials">
+        <p><strong>NDG Linux Essentials</strong><br><span>Cisco / NDG · 2023</span></p>
+      </button>
+
+      <button class="cert hover-raise" data-modal="img" data-src="/img/reconocimiento.png">
+        <img src="/img/reconocimiento.png" alt="Reconocimiento – Desarrollo y Gestión de Proyecto Programable">
+        <p><strong data-i18n="cert_reco">Reconocimiento – Desarrollo y Gestión de Proyecto Programable</strong><br><span data-i18n="cert_reco_meta">Ing. Hillary Sánchez Noguera · 2023</span></p>
+      </button>
+    </div>
+  </section>
+
+  <!-- 3) Mi experiencia -->
+  <section id="experiencia" class="reveal section" data-reveal-group>
+    <h2 data-i18n="exp_title">Mi experiencia</h2>
+    <div class="job hover-raise">
+      <h3 data-i18n="exp_role">Practicante – Desarrollador de Productos Digitales</h3>
+      <p><strong>CCI Consultores Informáticos S.A.</strong> · <em data-i18n="exp_dates">Enero 2023 – Noviembre 2023</em></p>
+      <ul data-reveal-stagger>
+        <li data-i18n="exp_1">Identificación y diseño de soluciones para mejorar la usabilidad de aplicaciones.</li>
+        <li data-i18n="exp_2">Detección y solución de errores de funcionalidad para garantizar rendimiento óptimo.</li>
+        <li data-i18n="exp_3">Diseño y desarrollo de modelos de datos para soportar aplicaciones.</li>
+        <li data-i18n="exp_4">Contribución en backend con arquitectura robusta y escalable.</li>
+        <li data-i18n="exp_5">Diseño y programación de funcionalidades frontend orientadas a UX.</li>
+        <li data-i18n="exp_6">Pruebas exhaustivas de aplicaciones móviles y web.</li>
+        <li data-i18n="exp_7">Participación en el desarrollo de aplicaciones móviles y web según estándares de la industria.</li>
+        <li data-i18n="exp_8">Gestión de bases de datos relacionales y no relacionales.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4) Mis proyectos -->
+  <section id="proyectos" class="reveal section" data-reveal-group>
+    <h2 data-i18n="proj_title">Mis proyectos</h2>
+    <div class="proyecto hover-raise">
+      <h3>Checkpoint</h3>
+      <p class="lead justify" data-i18n="proj_text1">
+        <strong>Checkpoint</strong> es una plataforma creada por jugadores para jugadores. Su propósito es ofrecer
+        reseñas, guías y análisis de videojuegos desde una perspectiva auténtica, priorizando la voz de la comunidad
+        gamer sobre los medios tradicionales.
+      </p>
+      <p class="justify" data-i18n="proj_text2">
+        El contenido publicado proviene de autores seleccionados por su conocimiento y experiencia en cada juego.
+        Cada aporte pasa por un proceso de revisión y se integra en un asistente de inteligencia artificial que
+        interpreta la información y genera respuestas útiles, recomendaciones y análisis personalizados para los usuarios.
+      </p>
+      <p class="justify" data-i18n="proj_text3">
+        Checkpoint combina tecnología y diseño: un backend en <strong>Node.js</strong> con base de datos
+        <strong>SQL Server</strong>, arquitectura escalable y un sistema de recuperación semántica que permitirá
+        realizar búsquedas inteligentes basadas en contexto. Su interfaz busca ofrecer una lectura fluida y una
+        experiencia visual enfocada en la comunidad y el aprendizaje.
+      </p>
+
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/kShGU9BvcpQ?si=vuV5QFRVtZgVCprw&rel=0&modestbranding=1"
+          title="Checkpoint Demo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5) Cartas -->
+  <section id="cartas" class="reveal section" data-reveal-group>
+    <h2 data-i18n="letters_title">Cartas de recomendación</h2>
+    <div class="cards grid-2">
+      <div class="card hover-raise">
+        <h3 data-i18n="letter_cci_title">Carta de recomendación – CCI Consultores</h3>
+        <div class="doc-preview-wrap">
+          <iframe class="doc-preview" src="/docs/Carta-CCI.pdf#toolbar=0&navpanes=0&scrollbar=0" title="Vista previa Carta CCI"></iframe>
+        </div>
+        <div class="actions">
+          <a class="btn" href="/docs/Carta-CCI.pdf" target="_blank" rel="noopener" data-i18n="open_new_tab">Abrir en pestaña</a>
+          <button class="btn outline" data-modal="pdf" data-src="/docs/Carta-CCI.pdf#toolbar=1" data-i18n="view_here">Ver aquí</button>
+        </div>
+      </div>
+
+      <div class="card hover-raise">
+        <h3 data-i18n="letter_hillary_title">Carta de recomendación – Ing. Hillary Sánchez</h3>
+        <div class="doc-preview-wrap">
+          <iframe class="doc-preview" src="/docs/Carta-Hillary-Sanchez.pdf#toolbar=0&navpanes=0&scrollbar=0" title="Vista previa Carta Hillary"></iframe>
+        </div>
+        <div class="actions">
+          <a class="btn" href="/docs/Carta-Hillary-Sanchez.pdf" target="_blank" rel="noopener" data-i18n="open_new_tab">Abrir en pestaña</a>
+          <button class="btn outline" data-modal="pdf" data-src="/docs/Carta-Hillary-Sanchez.pdf#toolbar=1" data-i18n="view_here">Ver aquí</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="reveal section">
+    <p>© <%= new Date().getFullYear() %> Sebastián Velázquez Guillén</p>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="modal-close" aria-label="Cerrar">×</button>
+    <div class="modal-content"></div>
+  </div>
+
+  <script src="/scripts.js"></script>
+</body>
+</html>
