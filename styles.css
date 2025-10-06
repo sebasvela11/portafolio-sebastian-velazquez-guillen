@@ -188,7 +188,46 @@ h3 { color: #f4f4fb; margin: .75rem 0; }
   margin-bottom: 1.2rem;
 }
 
+/* Facts list styling */
+.facts {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.facts li {
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+.facts strong {
+  color: var(--text);
+}
+
+.facts a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.facts a:hover {
+  color: #a78bfa;
+  text-decoration: underline;
+}
+
 ul { line-height: 1.9; }
+
+/* Estilos para enlaces */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+a:hover {
+  color: #a78bfa;
+  text-decoration: underline;
+}
 
 /* Grids, cards, botones */
 .grid-2 {
@@ -354,7 +393,13 @@ ul { line-height: 1.9; }
   display: block;
   transition: transform .35s ease, filter .35s ease;
 }
-.cert p { margin-top: .6rem; }
+.cert p { 
+  margin-top: .6rem;
+  color: var(--text);
+}
+.cert strong {
+  color: var(--text);
+}
 .cert:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 20px 40px rgba(124, 58, 237, .22);
